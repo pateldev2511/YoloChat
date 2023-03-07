@@ -66,17 +66,23 @@ npm install
 
 
 # Screenshots
+
 ## Login 
+
 ![image](https://user-images.githubusercontent.com/57655776/223529262-ddb254a4-a76e-47fa-81d2-de42820bab3f.png)
 
 ## Register
+
 ![image](https://user-images.githubusercontent.com/57655776/223529445-ce81b2bc-a451-41b0-b4dd-094454946a7b.png)
 
 ## Set Profile
+
 ![image](https://user-images.githubusercontent.com/57655776/223529830-da39e376-77ef-4e6b-99c5-09a18c2bc609.png)
 
 ##Chat UI
+
 ![image](https://user-images.githubusercontent.com/57655776/223530347-f673cdf0-2f70-4255-b6f5-3ccf4336cb55.png)
 
 ##Demo
+
 ![ezgif com-optimize](https://user-images.githubusercontent.com/57655776/223533547-11c5aea2-6cb8-49be-b1ee-f972d6198e99.gif)
