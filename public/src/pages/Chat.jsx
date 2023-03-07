@@ -86,6 +86,7 @@ height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
   position: relative;
   z-index: 1;
   gap: 1rem;
@@ -99,7 +100,7 @@ height: 100vh;
     height: 85vh;
     width: 85vw;
     background-color:#FFFFFF;
-    opacity: 0.85;
+    opacity: 0.95;
     display: grid;
     grid-template-columns: 25% 75%;
     @media screen and (min-width: 720px) and (max-width: 1080px) {

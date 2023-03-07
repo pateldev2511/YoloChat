@@ -24,7 +24,7 @@ const Button = styled.button`
   padding: auto;
   width: 100%;
   height: 100%;
-  
+  border-radius: 0px 0px 0px 0px;
   background-color: #e6e7e9;
   border: none;
   gap: 0.5rem;

@@ -102,9 +102,9 @@ width:  100vw;
 display: flex;
 flex-direction: column;
 justify-content: center;
-backdrop-filter: blur(1px);
+
 position: relative;
-opacity: 0.85;
+opacity: 0.95;
 box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 gap: 1rem;
 

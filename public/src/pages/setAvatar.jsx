@@ -114,7 +114,7 @@ align-items: center;
 flex-direction: column;
 backdrop-filter: blur(1px);
 position: relative;
-opacity: 0.85;
+opacity: 0.95;
 gap: 3rem;
 height:100vh;
 width: 100vw;

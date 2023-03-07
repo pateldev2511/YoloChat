@@ -123,9 +123,9 @@ flex-direction: column;
 justify-content: center;
 gap: 1rem;
 align-items: center;
-backdrop-filter: blur(1px);
+
 position: relative;
-opacity: 0.85;
+opacity: 0.95;
 box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 .brand{
     display: flex;

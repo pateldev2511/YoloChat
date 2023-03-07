@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, {  useCallback } from 'react'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
@@ -75,7 +75,7 @@ export default function Particle() {
                     default: "bounce",
                   },
                   random: false,
-                  speed: 2, // set to a fixed value for a consistent speed
+                  speed: 1, // set to a fixed value for a consistent speed
                   straight: false,
                 },
                 number: {
@@ -86,7 +86,7 @@ export default function Particle() {
                   value: 80,
                 },
                 opacity: {
-                  value: 0.5,
+                  value: 0.85,
                 },
                 shape: {
                   type: "circle",

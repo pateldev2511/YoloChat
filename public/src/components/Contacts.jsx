@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from 'react'
 import styled from 'styled-components';
 import Logo from "../assets/logo.png";
-import Logout from './Logout';
+
 import BgLogout from './BgLogout';
 
 function Contacts({ contacts, currentUser, changeChat }) {
@@ -64,7 +64,7 @@ function Contacts({ contacts, currentUser, changeChat }) {
           
         </div>
         <div className="logout">
-            <h2></h2>
+            
             <BgLogout/>
           </div>
           
@@ -135,12 +135,13 @@ background-color: #F6F6F6;
   }
   .selected {
     background-color:#0161FF;
+    color: #FFFFFF;
   }
   
 }
 .current-user {
   border-radius: 0px 0px 0px 0px;
-  background-color:#0043b0;
+  background-color:#2375FC;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,6 +169,7 @@ background-color: #F6F6F6;
 .logout {
   color: #404040;
   display: flex;
+  
     justify-content: space-between;
     align-items: center;
     
