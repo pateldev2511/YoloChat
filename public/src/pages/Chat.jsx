@@ -54,7 +54,12 @@ useEffect(() => {
 }, [currentUser, navigate]);
   const handleChatChange = (chat) => {
     setCurrentChat(chat);
+    console.log("handleChatChange called with", chat);
+
   }
+
+  
+
   return (
     <>
   <Particles />

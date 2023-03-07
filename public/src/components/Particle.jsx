@@ -26,6 +26,7 @@ export default function Particle() {
                 enable: true,
                 zIndex: 0 // or any value is good for you, if you use -1 set `interactivity.detectsOn` to `"window"` if you need mouse interactions
               },
+              "autoPlay": true,
               background: {
                 color: {
                   value: "#E6E7E9",

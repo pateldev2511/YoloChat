@@ -18,10 +18,11 @@ export default function ChatContainer({currentChat, currentUser, socket}) {
         to: currentChat._id,
       });
       setMessages(response.data);
+      console.log("ChatContainer rendered with currentChat", currentChat);
     }
     }
       fetchData();
-    },[currentChat])
+    },[currentChat,currentUser])
 
   const handleSendMsg = async (msg) =>{
     await axios.post(sendMessageRoute,{
@@ -35,9 +36,8 @@ export default function ChatContainer({currentChat, currentUser, socket}) {
       message: msg,
     });
 
-    const msgs = [...messages]
-    msgs.push({fromSelf:true,message:msg});
-    setMessages(msgs);
+    const newMsg = { id: messages.length, fromSelf: true, message: msg };
+    setMessages((prev) => [...prev, newMsg]);
   };
 
   useEffect(()=>{
@@ -46,14 +46,14 @@ export default function ChatContainer({currentChat, currentUser, socket}) {
         setArrivalMessage({fromSelf:false,message:msg});
       });
     }
-  },[]);
+  },[socket]);
 
   useEffect(()=>{
-    arrivalMessage && setMessages((prev)=>[...prev, arrivalMessage]);
+    arrivalMessage && setMessages((prev) => [...prev, { id: messages.length, ...arrivalMessage }]);
   },[arrivalMessage])
 
   useEffect(()=>{
-    scrollRef.current?.scrollIntoView({behaviour: "smooth"});
+    scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   },[messages]);
 
     return (
@@ -174,7 +174,6 @@ display: grid;
     }
     .sended {
       justify-content: flex-end;
-      
       .content {
         background-color: #E6E7E9;
         color: #404040;
