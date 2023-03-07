@@ -6,6 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { registerRount } from "../utils/APIRoutes";
+import Particles from '../components/Particle';
 function Register() {
     const navigate = useNavigate();
     const [values, setValues] = useState({
@@ -25,10 +26,13 @@ function Register() {
     }
     
     useEffect(() => {
-        if (localStorage.getItem("yolo-chat-user")) {
-            navigate('/')
+        async function fetchData() {
+            if (localStorage.getItem("yolo-chat-user")) {
+                navigate('/')
+            }
         }
-    }, []);
+        fetchData();
+    }, [navigate]);
     
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -74,6 +78,7 @@ function Register() {
     };
     return (
       <>
+      <Particles />
       <FormContainer>
           
           <form onSubmit={(event) => handleSubmit(event)}>
@@ -118,7 +123,10 @@ flex-direction: column;
 justify-content: center;
 gap: 1rem;
 align-items: center;
-background-color:#121324;
+backdrop-filter: blur(1px);
+position: relative;
+opacity: 0.85;
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 .brand{
     display: flex;
     aligin-item: center;
@@ -129,7 +137,7 @@ background-color:#121324;
 
     }
     h1{
-        color: white;
+        color: #404040;
         text-treasform: uppercase;
     }
     
@@ -138,24 +146,24 @@ form{
     display:flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #00000076;
+    background-color: #f0f0f0;
     border-radius: 2rem;
     padding: 3rem 5rem;
     input{
         background-color: transparent;
         padding: 1rem;
-        border: 0.1rem solid #4e0eff;
+        border: 0.1rem solid #0161FF;
         border-radius: 0.4rem;
-        color: white;
+        color: #404040;
         width: 100%;
         font-size: 1rem;
         &:focus{
-            border: 0.1rem solid #997af0;
+            border: 0.1rem solid #0066b2;
             outline: none;
         }
     }
     button{
-        background-color: #997af0;
+        background-color: #007FFF;
         color: white;
         padding: 1rem 2rem;
         border: none;
@@ -166,15 +174,15 @@ form{
         text-transform: uppercase;
         transition: 0.3s ease-in-out;
         &:hover{
-            background-color: #4e0eff;
+            background-color: #0161FF;
         }
     }
     span{
-        color: white;
+        color: #404040;
         text-transform: uppercase;
         text-align: center;
         a {
-            color: #4e0eff;
+            color: #0161FF;
             text-decoration:none;
             font-weight: bold;
         }
