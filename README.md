@@ -88,10 +88,10 @@ npm install
 
 ![image](https://user-images.githubusercontent.com/57655776/223529830-da39e376-77ef-4e6b-99c5-09a18c2bc609.png)
 
-##Chat UI
+## Chat UI
 
 ![image](https://user-images.githubusercontent.com/57655776/223530347-f673cdf0-2f70-4255-b6f5-3ccf4336cb55.png)
 
-##Demo
+## Demo
 
 ![ezgif com-optimize](https://user-images.githubusercontent.com/57655776/223533547-11c5aea2-6cb8-49be-b1ee-f972d6198e99.gif)
