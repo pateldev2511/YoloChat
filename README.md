@@ -6,9 +6,10 @@ With YoloChat, users can create an account and easily connect with their friends
 
 One of the standout features of YoloChat is the use of the Multiavatar API to generate unique profile pictures for users. This API generates avatar images based on a user's name and color scheme, resulting in a highly personalized and unique profile picture for each user.
 
-YoloChat is built using NodeJS for server-side scripting, React for front-end development, and MongoDB for database management. The app is highly scalable and can handle a large number of users without compromising performance.
+YoloChat is built using NodeJS for server-side scripting, React for front-end development, and MongoDB for database management. 
 
-In summary, YoloChat is a modern and highly customizable chat app that provides users with a user-friendly interface, personalized profile pictures, and a range of features to enhance their chat experience. With YoloChat, users can stay connected with friends and family in a fun and intuitive way.
+With YoloChat, You can Have fun with friends.
+
 ## Installation
 
 Install NodeJS 
