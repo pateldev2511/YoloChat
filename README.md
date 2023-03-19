@@ -10,6 +10,10 @@ YoloChat is built using NodeJS for server-side scripting, React for front-end de
 
 With YoloChat, You can Have fun with friends.
 
+## Demo
+
+![ezgif com-optimize](https://user-images.githubusercontent.com/57655776/223533547-11c5aea2-6cb8-49be-b1ee-f972d6198e99.gif)
+
 ## Installation
 
 Install NodeJS 
@@ -93,6 +97,4 @@ npm install
 
 ![image](https://user-images.githubusercontent.com/57655776/223530347-f673cdf0-2f70-4255-b6f5-3ccf4336cb55.png)
 
-## Demo
 
-![ezgif com-optimize](https://user-images.githubusercontent.com/57655776/223533547-11c5aea2-6cb8-49be-b1ee-f972d6198e99.gif)
