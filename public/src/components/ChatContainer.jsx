@@ -36,20 +36,24 @@ export default function ChatContainer({currentChat, currentUser, socket}) {
       message: msg,
     });
 
-    const newMsg = { id: messages.length, fromSelf: true, message: msg };
-    setMessages((prev) => [...prev, newMsg]);
+    const msgs = [...messages];
+    msgs.push({fromSelf:true,message:msg});
+    setMessages(msgs);
+    /* const newMsg = { id: messages.length, fromSelf: true, message: msg };
+    setMessages((prev) => [...prev, newMsg]); */
   };
 
   useEffect(()=>{
     if (socket.current) {
-      socket.current.on("msg-recieve", (msg)=>{
+      socket.current.on("msg-receive", (msg)=>{
+        console.log("msg-receive event received with", msg);
         setArrivalMessage({fromSelf:false,message:msg});
       });
     }
   },[socket]);
 
   useEffect(()=>{
-    arrivalMessage && setMessages((prev) => [...prev, { id: messages.length, ...arrivalMessage }]);
+    arrivalMessage && setMessages((prev) => [...prev, /* { id: messages.length, ...arrivalMessage } */ arrivalMessage]);
   },[arrivalMessage])
 
   useEffect(()=>{
@@ -87,7 +91,7 @@ export default function ChatContainer({currentChat, currentUser, socket}) {
                               <div ref={scrollRef} key={uuidv4()}>
                                 <div
                 className={`message ${
-                  message.fromSelf ? "sended" : "recieved"
+                  message.fromSelf ? "sended" : "received"
                 }`}
               >
 
