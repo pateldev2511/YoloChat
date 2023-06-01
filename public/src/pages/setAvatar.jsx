@@ -9,7 +9,7 @@ import { setAvatarRoute } from "../utils/APIRoutes";
 import { Buffer } from "buffer";
 import Particles from '../components/Particle';
 export default function SetAvatar() {
-    const api = "https://api.multiavatar.com/"; 
+    const api = "https://api.multiavatar.com/<USER_TOKEN>"; 
     const navigate = useNavigate();
     const [avatars, SetAvatar] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
